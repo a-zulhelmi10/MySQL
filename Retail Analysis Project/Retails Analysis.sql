@@ -1,0 +1,26 @@
+#create database retails;
+select database();
+use retails;
+select * from `sql - retail sales analysis_utf`;
+desc `sql - retail sales analysis_utf`;
+alter table `sql - retail sales analysis_utf` change ï»¿transactions_id transactions_id int;
+select count(transactions_id) from `sql - retail sales analysis_utf`;
+#drop table `sql - retail sales analysis_utf`;
+delete from `sql - retail sales analysis_utf` where gender is null OR quantiy is null OR age is null OR transactions_id is null OR sale_date is null OR sale_time is null OR customer_id is null
+OR category is null OR price_per_unit is null OR cogs is null OR age is null OR total_sale is null;
+select sum(total_sale) as 'total sale' from `sql - retail sales analysis_utf`;
+select count(distinct customer_id) from `sql - retail sales analysis_utf`;
+select distinct category from `sql - retail sales analysis_utf`;
+select sale_date from `sql - retail sales analysis_utf`;
+select * from `sql - retail sales analysis_utf` where sale_date='2022-11-05';
+select distinct category from `sql - retail sales analysis_utf`;
+select * from `sql - retail sales analysis_utf` where category='Clothing' AND quantiy>3 AND month(sale_date)=11;
+select count(*) from `sql - retail sales analysis_utf` where category='Clothing' AND quantiy>3 AND month(sale_date)=11; 
+select category, sum(total_sale) as 'total sale' from `sql - retail sales analysis_utf` group by 1;
+select category, avg(age) from `sql - retail sales analysis_utf` group by 1;
+select transactions_id, total_sale from `sql - retail sales analysis_utf` where total_sale>1000;
+select category, gender, count(transactions_id) from `sql - retail sales analysis_utf` group by 1,2 order by 2 desc;
+select distinct year(sale_date) from `sql - retail sales analysis_utf`;
+select month(sale_date), year(sale_date), avg(total_sale) from `sql - retail sales analysis_utf` group by 1,2 order by 3 desc,1;
+select customer_id, sum(total_sale) from `sql - retail sales analysis_utf` group by 1 order by 2 desc limit 5;
+select count(distinct customer_id), category from `sql - retail sales analysis_utf`group by category;
