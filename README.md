@@ -1,14 +1,13 @@
-In this project, we will cover below activity:
+Listed below is the activity covered in this analysis:
 
 1) Verify all records is exist
-2) rename column transaction_id
-3) delete null 
-4) calculate total sales
-5) calculate total customer
+2) Rename column transaction_id
+3) Delete null 
+4) Calculate total sales
+5) Calculate total customer
 6) Show no of category and list all categories
-7) retrieve records for sales made on 2022-11-05
-8) retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 3 in the month of 
-    Nov-2022.
+7) Retrieve records for sales made on 2022-11-05
+8) Retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 3 in the month of Nov-2022.
 9) Calculate the total sales (total_price) for each category.
 10) Find the average age of customers who purchased items from the 'Beauty' category.
 11) Retrieve all transactions where the total_sale is greater than 1000.
