@@ -1,6 +1,6 @@
 Listed below is the activity covered in this analysis:
 
-1) Verify all records is exist
+1) Verify all records exist
 2) Rename column transaction_id
 3) Delete null 
 4) Calculate total sales
